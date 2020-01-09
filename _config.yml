@@ -6,7 +6,7 @@
 title: 源码先生的调试人生
 subtitle: ''
 description: '源码先生的个人技术分享网站，分享IoT物联网，C++，Linux，Windows，Web等各种开发技术'
-keywords: 源码先生,技术分享,C++,Linux,Windows,Web,云原生,IoT物联网,工业互联网,工业4.0
+keywords: 源码先生,技术分享,C++,Node.js,go,Web,Linux,K8S,Docker,云原生,物联网IoT,工业互联网,工业4.0
 author: 源码先生
 language: zh-CN
 timezone: 'Asia/Shanghai'
