@@ -1,11 +1,14 @@
 ---
 title: 微信小游戏"跳一跳“外挂，亲测可用
+tags:
+    - 微信小游戏
 url: 126.html
 id: 126
 categories:
   - 其他
+keywords: AI,人工智能,应用,微信视频
+description: 'AI人工智能在微信视频动态中的应用'
 date: 2018-01-01 02:57:12
-tags:
 ---
 
 前天晚上升级了下微信，启动界面自带了一个小游戏“跳一跳”，作为一个从来不玩游戏的程序猿（花花绿绿的游戏界面看不懂![](http://img.baidu.com/hi/face/i_f08.gif)），一下被这个简单的游戏吸引住了，一眼就明白了怎么玩（智商还是可以滴）。  
@@ -22,7 +25,9 @@ tags:
 珊瑚虫QQ可以显示好友的IP地址以及地理位置，还去掉了QQ的广告，此外51彩虹QQ外挂还可以查看隐身好友的，是不是很爽？那个年代可以偷看别人QQ的加密相册呢。当然这种事情现在肯定做不到了，因为随着技术的积累，常见软件都做了各种防护，想外挂QQ那是越来越难。另外，珊瑚虫QQ的作者最后被被送进了监狱。。。so,外挂这种事是违法的啦。  
 斗转星移，移动互联网时代，QQ也升级为微信。。。那么，现在有人做到了外挂微信吗？好奇心下，我决定找下“跳一跳”外挂，想知道它是如何实现的。  
 最后，在万能的github上找到了这款外挂，名为JumpHelper，它是C#程序，先上地址为敬  
+
 [跳一跳github地址](https://github.com/Nihiue/JumpHelper/ "跳一跳github地址")  
+
 经过简单研究，我明白了JumpHelper的原理，它其实不算外挂了，它只是模拟了屏幕的点击，并没有hook微信。JumpHelper只是计算出两个方块之间的像素距离，然后把这个距离，按照比例系数，等比转换为长按屏幕的时间，最终根据这个时间来模拟屏幕的长按！  
 我顺手使用了下JumpHelper，很快得到近200分，开了挂，果然不一样。
 
@@ -30,33 +35,22 @@ tags:
 
 这里简单贴下JumpHelper的使用步骤。  
 **准备事项**  
-
-1.  手机投屏到PC上，JumpHelper是通过Windows API，计算投屏到PC上，两个方块之间的距离的；
-    
-2.  如何投屏呢，win10其实是自带投屏功能,前提是PC要支持micrcast；如果PC不支持micrcast，也可以使用teamviewer；
-    
-3.  安卓手机开启开发者调试模式，请自行根据手机型号设置；
-    
-4.  准备好ADB，上述github地址也已经包含了一个adb。  
+1. 手机投屏到PC上，JumpHelper是通过Windows API，计算投屏到PC上，两个方块之间的距离的；
+2. 如何投屏呢，win10其实是自带投屏功能,前提是PC要支持micrcast；如果PC不支持micrcast，也可以使用teamviewer；
+3. 安卓手机开启开发者调试模式，请自行根据手机型号设置；
+4. 准备好ADB，上述github地址也已经包含了一个adb。  
     
 
 **JumpHelper使用步骤**
+1. 启动JumpHelper.exe(上述github地址中已经包含了编译好的exe，也可以使用Visual Studio自行编译，不过VS速度之慢，占内存之巨，你懂的，目测江湖上只有Android Studio可媲美)；
 
-1.  启动JumpHelper.exe(上述github地址中已经包含了编译好的exe，也可以使用Visual Studio自行编译，不过VS速度之慢，占内存之巨，你懂的，目测江湖上只有Android Studio可媲美)；![run.png](/images/wp/1514746195824245.png "1514746195824245.png")
-    
-2.  手机通过USB连接到PC；
-    
-3.  点击Select Path按钮，选择adb的路径；点击Test按钮，提示Succeed即为成功连接到手机；
-    
-4.  手机打开“跳一跳”界面，并投屏到PC ；
-    
-5.  鼠标移动到PC屏幕上第一个方块上面，然后按键盘的1；此时JumpHelper.exe内部记录下第一个方块的像素位置；
-    
-6.  鼠标移动到PC屏幕上第二个方块上面，然后按键盘的2；此时JumpHelper.exe内部记录下第二个方块的像素位置，并计算出两者距离，换算出长按时间，把长按时间通过ADB发送到手机上。按键盘的2后，就可以看到手机上自动跳动了。根据跳动的位置，需要不断修改Conversion Ratio的值，如果跳的近，就增大Conversion Ratio的值；如果跳的远，就减小Conversion Ratio的值；不断修改Conversion Ratio的值，直到跳的位置很准确，此后就不需要在修改Conversion Ratio的值；
-    
-7.  重复上述步骤，即可完成精确的跳一跳。
-    
+![run.png](/images/wp/1514746195824245.png "1514746195824245.png")
 
-  
+2. 手机通过USB连接到PC；
+3. 点击Select Path按钮，选择adb的路径；点击Test按钮，提示Succeed即为成功连接到手机；
+4. 手机打开“跳一跳”界面，并投屏到PC ；
+5. 鼠标移动到PC屏幕上第一个方块上面，然后按键盘的1；此时JumpHelper.exe内部记录下第一个方块的像素位置； 
+6.  鼠标移动到PC屏幕上第二个方块上面，然后按键盘的2；此时JumpHelper.exe内部记录下第二个方块的像素位置，并计算出两者距离，换算出长按时间，把长按时间通过ADB发送到手机上。按键盘的2后，就可以看到手机上自动跳动了。根据跳动的位置，需要不断修改Conversion Ratio的值，如果跳的近，就增大Conversion Ratio的值；如果跳的远，就减小Conversion Ratio的值；不断修改Conversion Ratio的值，直到跳的位置很准确，此后就不需要在修改Conversion Ratio的值；  
+7. 重复上述步骤，即可完成精确的跳一跳。
 
 **上述方案来自开源社区，仅供学习研究，请勿用于商业用途，否则责任自负。**

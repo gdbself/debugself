@@ -7,6 +7,8 @@ url: 113.html
 id: 113
 categories:
   - QT
+keywords: QT,QComboBox,自动宽度
+description: '设置QComboBox的Item自动宽度'
 date: 2017-10-26 17:22:47
 ---
 
@@ -14,7 +16,6 @@ date: 2017-10-26 17:22:47
 
 答案：在QT设计器中，设置minimumContentsLength >0,并设置sizeAdjustPolicy 为AdjustToContents，此后当添加的item非常长时，QComboBox会自己变宽
 
-  
 
 参考资料
 
