@@ -15,7 +15,7 @@ description: 'JavaScript原型链原理详解，JavaScript中__proto__ 和protot
 date: 2018-03-08 18:08:35
 ---
 
-本文参考了https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/001434499763408e24c210985d34edcabbca944b4239e20000
+本文参考了<https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/001434499763408e24c210985d34edcabbca944b4239e20000>
 
 JavaScript不区分类和实例的概念，js中只有实例，不存在类似C++中的类的概念；而JS是面向对象的，没有类的概念如何实现面向对象(如继承的功能）呢？JS是通过原型来实现面向对象编程，这里的原型，就大约等于C++/Java中类的概念
   
@@ -111,7 +111,7 @@ JavaScript中\_\_proto\_\_ 和prototype的区别，总结以下
 
 **通过prototype实现继承**
 
-如何通过原型链实现继承呢，比如从Student我想扩展出PrimaryStudent，这是需要使用到prototype了，代码稍微复杂，请参考https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/0014344997013405abfb7f0e1904a04ba6898a384b1e925000
+如何通过原型链实现继承呢，比如从Student我想扩展出PrimaryStudent，这是需要使用到prototype了，代码稍微复杂，请参考<https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/0014344997013405abfb7f0e1904a04ba6898a384b1e925000>
 
 **通过class和extends实现继承：比prototype更简洁**
 

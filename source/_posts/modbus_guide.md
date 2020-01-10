@@ -116,7 +116,7 @@ Modbus RTU的报文格式如下图。
 #### 功能码(Function Code)
 功能码对应了设备提供的某个服务/功能，Modbus标准中把功能码分为3类：
 
-- 公共功能码(Public Function Codes)：Modbus标准定义好的，功能已经明确的功能码，此类功能码可以查询Modbus标准文档( http://www.modbus.org/docs/Modbus_Application_Protocol_V1_1b3.pdf)
+- 公共功能码(Public Function Codes)：Modbus标准定义好的，功能已经明确的功能码，此类功能码可以查询Modbus标准文档( <http://www.modbus.org/docs/Modbus_Application_Protocol_V1_1b3.pdf> )
 - 用户自定义功能码(User-Defined Function Codes)：设备根据需求自定义的功能码，取值范围65-72和100-110；
 - 保留功能码(Reserved Function Codes)：目前没有使用，可忽略
 
@@ -184,7 +184,7 @@ TCP中有客户端（Client）和服务器(Server），对应到Modbus中，Modb
 
 
 ## Modbus之Hello World
-Modbus软件，比较流行是Modbus Poll及Modbus Slave，功能也比较完善，不过是收费软件(可以试用30天）。作为Hello World的演示，源码先生找到了一款免费的Modbus模拟软件EasyModbusTCP,可以通过https://github.com/rossmann-engineering/EasyModbusTCP.NET/releases下载。
+Modbus软件，比较流行是Modbus Poll及Modbus Slave，功能也比较完善，不过是收费软件(可以试用30天）。作为Hello World的演示，源码先生找到了一款免费的Modbus模拟软件EasyModbusTCP,可以通过<https://github.com/rossmann-engineering/EasyModbusTCP.NET/releases>下载。
 
 ### 运行Modbus TCP Server（即从机）
 双击EasyModbusServerSimulator.exe启动，程序自动以本机IP建立TCP服务器，端口502。

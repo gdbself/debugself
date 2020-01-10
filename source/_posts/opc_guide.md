@@ -167,7 +167,7 @@ Hello World方法需要输入参数，这里填入测试字符串“www.debugsel
 ![](/images/wp/opc_ua_online_call_output.png)
 
 ### 部署本地OPC UA Server
-上面的“在线OPC UA Server”网速很慢，测试时可能连接失败，这是也可以自己部署本地OPC UA Server。https://github.com/Pro/opcua-animal-server 是一个使用open62541构建OPC UA Server的示例，为了方便部署，我把opcua-animal-server构建成docker镜像(构建过程请参考 https://github.com/gdbself/opcua-animal-server/ )，方便一键本地部署。
+上面的“在线OPC UA Server”网速很慢，测试时可能连接失败，这是也可以自己部署本地OPC UA Server。<https://github.com/Pro/opcua-animal-server> 是一个使用open62541构建OPC UA Server的示例，为了方便部署，我把opcua-animal-server构建成docker镜像(构建过程请参考 <https://github.com/gdbself/opcua-animal-server/> )，方便一键本地部署。
 
 以Ubuntu系统为例，首先要安装docker（docker已经是云端开发的基础设施，不了解docker的话，有必要借此学习下docker的用法）。
 
@@ -193,9 +193,9 @@ docker run -d -p 4840:4840 debugself/opcua-animal-server:20191125
 
 
 ## OPC UA的学习资料
-- 学习OPC UA的细节，源码先生推进阅读 https://open62541.org/doc/current/index.html ,比官方的文档简单明了；
-- C语言实现的开源OPC UA：https://github.com/open62541；
-- 官方OPC UA标准文档：https://reference.opcfoundation.org/v104；
-- 官方提供的OPC UA实现：https://github.com/OPCFoundation ，包括C、C++、C#、Java语言实现的OPC UA Server和Client。
+- 学习OPC UA的细节，源码先生推进阅读 <https://open62541.org/doc/current/index.html> ,比官方的文档简单明了；
+- C语言实现的开源OPC UA：<https://github.com/open62541>；
+- 官方OPC UA标准文档：<https://reference.opcfoundation.org/v104>；
+- 官方提供的OPC UA实现：<https://github.com/OPCFoundation> ，包括C、C++、C#、Java语言实现的OPC UA Server和Client。
 
 OPC UA中的概念很多，初学者会感觉OPC UA很复杂，这里再强调一次，OPC UA本质是按照面向对象的方式对业务建模，搞不懂OPC UA时，按照面向对象的思路，基本可以做到拨云见日。

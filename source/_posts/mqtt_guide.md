@@ -98,7 +98,7 @@ mqtt服务器类似消息的中转站，所以mqtt服务器有一个更形象的
 首先我们要有一个mqtt服务器，由于mqtt只是一份标准规范，而目前符合mqtt标准的服务器已经有很多了，开源的有mosquitto，RabbitMQ，EMQ X Broker等。自己手动安装服务器，很容易出现选择困难症，到底哪家mqtt服务器强？其实最简单的方法，是直接使用网上公开的，在线mqtt服务器，mqtt官方公布了一个在线mqtt服务器列表，见[在线mqtt服务器](https://github.com/mqtt/mqtt.github.io/wiki/public_brokers)。这些线上服务器仅做测试使用，这里我们选取test.mosquitto.org作为Hello World的测试服务器。
 
 ### 选择一个mqtt客户端
-mqtt客户端也有很多选择，经过源码先生的验证，开源的[qmqtt-client](https://github.com/emqx/qmqtt-client)使用比较简单，源码先生已经把qmqtt-client编译为exe，请直接从百度网盘https://pan.baidu.com/s/1ZTmmuSddLzRCoW4xLVCdvw 下载吧。
+mqtt客户端也有很多选择，经过源码先生的验证，开源的[qmqtt-client](https://github.com/emqx/qmqtt-client)使用比较简单，源码先生已经把qmqtt-client编译为exe，请直接从百度网盘<https://pan.baidu.com/s/1ZTmmuSddLzRCoW4xLVCdvw> 下载吧。
 双击qmqtt-client.exe，即可启动mqtt客户端。
 
 ### 小明和丽丽互发短信

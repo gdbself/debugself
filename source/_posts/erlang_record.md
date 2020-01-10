@@ -31,4 +31,4 @@ Slug.                                 % "patte
 
 参考资料
 
-http://www.jb51.net/article/59401.htm
+<http://www.jb51.net/article/59401.htm>

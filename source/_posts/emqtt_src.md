@@ -77,7 +77,7 @@ emqttd_session断开时，把session信息从ets表中删除
 
 * * *
 
-**底层通信socket使用的是https://github.com/emqtt/esockd，它是异步**
+**底层通信socket使用的是<https://github.com/emqtt/esockd>，它是异步**
 
 **从socket异步接收数据的流程**
 

@@ -106,27 +106,27 @@ ABP中，**节点需要的DevAddr、AppSKey、NwkSEncKey等信息，不是从云
 
 ## LoRaWAN的实现
 LoRaWAN的标准由LoRa Alliance发布，可以从其官网下载标准文档：
-- https://lora-alliance.org/resource-hub/lorawanr-specification-v11
-- https://lora-alliance.org/resource-hub/lorawanr-back-end-interfaces-v10
+- <https://lora-alliance.org/resource-hub/lorawanr-specification-v11>
+- <https://lora-alliance.org/resource-hub/lorawanr-back-end-interfaces-v10>
 
 ### LoRaWAN节点的实现
-LoRaWAN节点的实现请参考Semtech提供的示例代码：https://github.com/Lora-net/LoRaMac-node
+LoRaWAN节点的实现请参考Semtech提供的示例代码：<https://github.com/Lora-net/LoRaMac-node>
 
 ### LoRaWAN网关的实现
 
 #### LoRaWAN网关和LoRaWAN节点的通信
-网关需要接收节点数据，以及发送数据给节点，网关通过操作网关上的LoRa芯片实现，示例代码见 https://github.com/Lora-net/lora_gateway
+网关需要接收节点数据，以及发送数据给节点，网关通过操作网关上的LoRa芯片实现，示例代码见 <https://github.com/Lora-net/lora_gateway>
 
 #### LoRaWAN网关和LoRaWAN Server的通信
 网关需要把节点数据上报给云端的LoRaWAN Server，以及接收云端下行给节点的数据。
 
-网关作为节点和云端Server的转发中转站，**网关不解析节点数据，也没有业务逻辑，网关起到透传的作用**，所以LoRaWAN标准只规定了节点和云端Server之间的通信协议，并没有规定网关和云端Server之间的通信协议。但是网关和云端Server要通信，还是要有通信协议的，目前常用的通信协议是semtech公司定制的packet_forwarder( https://github.com/Lora-net/packet_forwarder/blob/master/PROTOCOL.TXT)。
+网关作为节点和云端Server的转发中转站，**网关不解析节点数据，也没有业务逻辑，网关起到透传的作用**，所以LoRaWAN标准只规定了节点和云端Server之间的通信协议，并没有规定网关和云端Server之间的通信协议。但是网关和云端Server要通信，还是要有通信协议的，目前常用的通信协议是semtech公司定制的packet_forwarder( <https://github.com/Lora-net/packet_forwarder/blob/master/PROTOCOL.TXT>)。
 
 packet_forwarder使用UDP通信，**网关中需要提前配置云端的UDP Server地址和端口**。
 - **网关上报数据给云端**：网关发送PUSH_DATA命令上报数据给云端
 - **网关接收云端下行的数据**：网发发送PULL_DATA询问云端是否有下行数据；由于UDP是无连接的，云端LoRaWAN Server只有在收到网关PULL_DATA命令时才可以知晓网关IP，但是公网中的NAT会很快淘汰网关的IP，所以**网关必须定时发送PULL_DATA**，否则云端无法下行数据给网关。
 
-基于packet_forwarder的使用示例见 https://github.com/Lora-net/packet_forwarder 。
+基于packet_forwarder的使用示例见 <https://github.com/Lora-net/packet_forwarder> 。
 
 ### 有待完善的LoRaWAN Server
 
@@ -249,7 +249,7 @@ docker-compose up -d
 
 ChirpStack(原loraserver)的Application Server提供了多种形式的接口。
 #### RESTful JSON API
-RESTful风格的HTTP API，访问http://you_host_ip:8080/aapi可以查看所有HTTP API，应用程序通过HTTP，可以调用ChirpStack的所有功能，包括
+RESTful风格的HTTP API，访问http://you_host_ip:8080/api可以查看所有HTTP API，应用程序通过HTTP，可以调用ChirpStack的所有功能，包括
 
 - Network-servers的增删改查
 - Service-profiles的增删改查
@@ -264,7 +264,7 @@ RESTful风格的HTTP API，访问http://you_host_ip:8080/aapi可以查看所有H
 - 获取节点数据：订阅主题'application/[applicationID]/device/[devEUI]/rx'可以收到节点上报给云端的数据
 - 给节点发送数据命令：通过向主题'application/[applicationID]/device/[devEUI]/tx'发布消息，可以给节点发送数据
 
-具体mqtt消息格式见https://www.chirpstack.io/application-server/integrate/sending-receiving/mqtt/
+具体mqtt消息格式见 <https://www.chirpstack.io/application-server/integrate/sending-receiving/mqtt/>
 
 #### gRPC
-见https://www.chirpstack.io/application-server/integrate/grpc/
+见 <https://www.chirpstack.io/application-server/integrate/grpc/>

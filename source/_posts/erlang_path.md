@@ -22,4 +22,4 @@ date: 2017-11-29 16:39:29
       
     In other words, modules found in any of the additional library directories override modules with the same name in OTP, except for modules in Kernel and STDLIB.  
       
-    http://erlang.org/doc/man/code.html
+    <http://erlang.org/doc/man/code.html>
