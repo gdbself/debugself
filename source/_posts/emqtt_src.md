@@ -5,16 +5,22 @@ tags:
   - Erlang
   - IoT
   - mqtt
+  - 上云协议
+  - 工业4.0
+  - 工业互联网
+  - 工业通信
   - 物联网
+  - 物联网云平台
 url: 212.html
 id: 212
 categories:
-  - IoT
+  - [物联网IoT,Erlang]
+keywords: emqtt,emqx,mqtt服务器,物联网IoT,工业互联网,工业4.0,物联网云平台,上云协议,万物联网
+description: 'emqtt源码分析，emqx源码分析'
 date: 2018-05-18 17:05:35
 ---
 
-**emqtt源码分析**
--------------
+## emqtt源码分析
 
 **gen_server2.erl**:客户端/服务器模型，服务器是一个独立的进程，该进程是一个消息循环，客户端可以向服务器发送消息，服务器通过消息循环来处理消息
 
@@ -62,7 +68,6 @@ emqttd_session断开时，把session信息从ets表中删除
 
 **emqttd_pubsub.erl**：最终处理subscribe和publish的地方
 
-  
 
 **emqttd_inflight.erl**：封装了erlang原生的gb\_trees，主要用在emqttd\_session中保存消息（emqttd_mqueue.erl文件中开头有说保存消息的意义）
 
@@ -88,8 +93,7 @@ prim\_inet:async\_recv
 
 [http://blog.csdn.net/aaaajw/article/details/51725244](http://blog.csdn.net/aaaajw/article/details/51725244)  
 
-**处理发布订阅的流程**
--------------
+## 处理发布订阅的流程**
 
 emqttd_protocol:received -->  
 
@@ -111,7 +115,6 @@ emqttd\_client:subscribe --> emqttd\_protocol:subscribe  --> emqttd_session:sub
 
 emqttd\_protocol:check\_acl     判断是否有权限publish
 
-  
 
 publish发布的消息内容结构#mqtt_message，
 
@@ -122,15 +125,11 @@ MsgId是emqtt自动产生的guid：msgid() -> emqttd_guid:gen()
 
 PktId是客户端（即发布publish的客户端）自动产生的id：MQTT.js --> client.js --> messageId:this._nextId()
 
-**keepalive流程**  
-
-------------------
+## keepalive流程
 
 emqttd\_protocol:process新建emqttd\_session时--> start\_keepalive发送keepalive消息--> emqttd\_client:handle\_info({keepalive,start接收并处理消息--> emqttd\_keepalive:start(StatFun读取连接状态，启动定时器-->定时器超时后回调emqttd\_client:handle\_info({keepalive,check，如果keepalive超时，shutdown连接
 
-**网络部稳定的处理/相同clientid的处理**  
-
------------------------------
+## 网络部稳定的处理/相同clientid的处理
 
 mqtt服务器根据clientid识别mqtt客户端，只要mqtt客户端clientid，就认为是同一个客户端；
 
