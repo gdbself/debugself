@@ -54,7 +54,7 @@ WAN是广域网的意思，多个LoRa节点可以通过同一个LoRa网关相互
 
 ![LoRaWAN拓扑结构](/images/wp/lora_topo_lorawan.png)
 
-LoRaWAN定义了LoRaWAN节点，LoRaWAN网关，LoraWAN云端Server之间的通信协议，他是一套数据交互的协议标准，与mqtt(详见[物联网IoT协议之mqtt快速入门教程](/2019/10/23/mqtt_guide/))、OPC UA(详见[物联网IoT协议之OPC UA快速入门教程](https://www.debugself.com/archives/262))没有本质区别，最终目的一致，都是为了实现不同系统的数据交互。
+LoRaWAN定义了LoRaWAN节点，LoRaWAN网关，LoraWAN云端Server之间的通信协议，他是一套数据交互的协议标准，与mqtt(详见[物联网IoT协议之mqtt快速入门教程](/2019/10/23/mqtt_guide/))、OPC UA(详见[物联网IoT协议之OPC UA快速入门教程](/2019/11/27/opc_guide/))没有本质区别，最终目的一致，都是为了实现不同系统的数据交互。
 
 ## 基于LoRaWAN的运营商？
 
