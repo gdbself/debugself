@@ -6,8 +6,9 @@ tags:
 url: 194.html
 id: 194
 categories:
-  - Linux
   - 学习资料
+keywords: Linux,嵌入式Linux,嵌入式操作系统,电子书下载
+description: 'Linux嵌入式学习Linux资料分享 PDF 电子书下载'
 date: 2016-04-28 00:00:49
 ---
 

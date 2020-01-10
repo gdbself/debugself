@@ -9,7 +9,7 @@ id: 186
 categories:
   - 学习资料
 keywords: MFC,VC,Windows,电子书,下载
-description: 'Windows、VC、MFC学习资料分享，PDF电子书下载'
+description: 'Windows、VC、MFC、VC++学习资料分享，PDF电子书下载'
 date: 2016-04-27 23:52:58
 ---
 

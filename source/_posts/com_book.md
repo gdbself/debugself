@@ -1,11 +1,13 @@
 ---
-title: COM 学习资料分享
+title: Windows COM 学习资料分享
 tags:
   - COM
 url: 180.html
 id: 180
 categories:
   - 学习资料
+keywords: Windows,COM,学习资料分享,电子书下载
+description: 'Windows COM 学习资料分享 PDF 电子书下载'
 date: 2016-04-27 23:48:21
 ---
 

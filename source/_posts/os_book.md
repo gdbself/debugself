@@ -6,6 +6,8 @@ url: 188.html
 id: 188
 categories:
   - 学习资料
+keywords: 操作系统原理,电子书下载
+description: '操作系统原理学习资料分享 PDF 电子书下载'
 date: 2016-04-27 23:54:29
 ---
 
