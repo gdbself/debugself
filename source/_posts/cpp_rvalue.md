@@ -6,7 +6,7 @@ url: 54.html
 id: 54
 categories:
   - C/C++
-keywords: C++11,右值引用,move,emplace
+keywords: C++11,右值引用,move,emplace,emplace_back
 description: 'C++11右值引用是什么、move、emplace、emplace_back原理和用法详解'
 date: 2017-09-13 23:16:41
 ---

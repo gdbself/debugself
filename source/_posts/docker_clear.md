@@ -21,6 +21,11 @@ docker rmi image_id 删除不需要的image
 
 docker system prune 自动空间清理
 
-**但是，经测试，docker system prune 只清理掉很少的空间  
-docker system prune --volume 这个清理了很多空间  
-**
+**但是，经测试如下命令，只清理掉很少的空间**
+```
+docker system prune
+```
+**使用如下命令可以清理掉不少空间**
+```
+docker system prune --volume  
+```
