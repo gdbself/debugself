@@ -14,7 +14,7 @@ tags:
 url: 212.html
 id: 212
 categories:
-  - [物联网IoT,Erlang]
+  - 物联网IoT
 keywords: emqtt,emqx,mqtt服务器,物联网IoT,工业互联网,工业4.0,物联网云平台,上云协议,万物联网
 description: 'emqtt源码分析，emqx源码分析'
 date: 2018-05-18 17:05:35

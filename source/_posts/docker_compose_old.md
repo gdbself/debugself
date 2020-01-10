@@ -1,13 +1,15 @@
 ---
 title: docker容器中文件一直是旧版本的原因
 tags:
-  - docker
+  - Docker
   - docker-compose
   - volume
 url: 154.html
 id: 154
 categories:
   - Docker
+keywords: Docker容器,云原生,k8s,微服务,云平台
+description: 'docker容器中文件一直是旧版本的原因'
 date: 2018-03-23 17:00:16
 ---
 

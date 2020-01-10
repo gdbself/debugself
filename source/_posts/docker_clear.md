@@ -1,11 +1,13 @@
 ---
 title: docker占用空间太大的清理方法
 tags:
-  - docker
+  - Docker
 url: 156.html
 id: 156
 categories:
   - Docker
+keywords: Docker容器,云原生,k8s,微服务,云平台
+description: 'docker占用空间太大的清理方法'
 date: 2018-03-27 16:02:30
 ---
 
