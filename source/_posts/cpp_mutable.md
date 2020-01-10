@@ -53,4 +53,4 @@ void FooTest(const Foo &foo){
 
 **场景三**
 
-用在Lambda表达式中，突破不能修改按值捕获的变量的限制，见[《C++11 Lambda表达式（匿名函数）用法详解》](http://www.debugself.com/archives/94 "C++11 Lambda表达式(匿名函数)用法详解")
+用在Lambda表达式中，突破不能修改按值捕获的变量的限制，见[《C++11 Lambda表达式（匿名函数）用法详解》](/2017/10/01/cpp_lambda/ "C++11 Lambda表达式(匿名函数)用法详解")

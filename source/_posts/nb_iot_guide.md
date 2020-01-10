@@ -25,11 +25,11 @@ date: 2019-12-18 00:06:33
 
 ![](/images/wp/wx.jpg)
 
-[物联网IoT协议之mqtt快速入门教程](https://www.debugself.com/archives/245)
-
-[物联网IoT协议之OPC UA快速入门教程](https://www.debugself.com/archives/262)
-
-[物联网IoT协议之LoRaWAN快速入门教程](https://www.debugself.com/archives/268)
+[物联网IoT协议之mqtt快速入门教程](/2019/10/23/mqtt_guide/)
+[物联网IoT协议之OPC UA快速入门教程](/2019/11/27/opc_guide/)
+[物联网IoT协议之 LoRaWAN快速入门教程](/2019/12/08/lorawan_guide/)
+[物联网IoT协议之NB-IoT/CoAP快速入门教程](/2019/12/18/nb_iot_guide/)
+[物联网IoT上云协议之Modbus快速入门教程](/2020/01/01/modbus_guide/)
 
 # 物联网IoT协议之NB-IoT/CoAP快速入门教程
 

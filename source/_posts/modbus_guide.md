@@ -22,20 +22,18 @@ date: 2020-01-01 20:10:40
 
 ![](/images/wp/wx.jpg)
 
-[物联网IoT协议之mqtt快速入门教程](https://www.debugself.com/archives/245)
-
-[物联网IoT协议之OPC UA快速入门教程](https://www.debugself.com/archives/262)
-
-[物联网IoT协议之LoRaWAN快速入门教程](https://www.debugself.com/archives/268)
-
-[物联网IoT协议之NB-IoT/CoAP快速入门教程](https://www.debugself.com/archives/276)
+[物联网IoT协议之mqtt快速入门教程](/2019/10/23/mqtt_guide/)
+[物联网IoT协议之OPC UA快速入门教程](/2019/11/27/opc_guide/)
+[物联网IoT协议之 LoRaWAN快速入门教程](/2019/12/08/lorawan_guide/)
+[物联网IoT协议之NB-IoT/CoAP快速入门教程](/2019/12/18/nb_iot_guide/)
+[物联网IoT上云协议之Modbus快速入门教程](/2020/01/01/modbus_guide/)
 
 # 物联网IoT上云协议之Modbus快速入门教程
 
 ## 什么是Modbus
 **Modbus和OPC UA、mqtt本质一样，都是为了实现多个设备相互通信的应用层协议**。Modbus于1979年产生于Modicon公司（现被Schneider公司收购），一经面世因其简单开放的通信方式逐渐成为工业系统中流行的标准。Modbus的国际组织主要有Modbus-IDA，负责推广Modbus标准以及对Modbus产品进行认证。Modbus官网见 www.modbus.org，网站主要包括协议文档，Modbus产品和厂商等内容。
 
-之前的[物联网IoT协议之OPC UA快速入门教程](https://www.debugself.com/archives/262)中提到OPC UA是工业领域常用的协议，其实在工业领域中Modbus比OPC/OPC UA更常见，市面上很多数据采集设备(如温湿度采集)都使用Modbus协议；OPC UA大量的专有名词（如节点、服务、引用等）总能把初学者弄得云里雾里，**而Modbus比OPC UA简单太多了**，简单之处体现包括：
+之前的[物联网IoT协议之OPC UA快速入门教程](/2019/11/27/opc_guide/)中提到OPC UA是工业领域常用的协议，其实在工业领域中Modbus比OPC/OPC UA更常见，市面上很多数据采集设备(如温湿度采集)都使用Modbus协议；OPC UA大量的专有名词（如节点、服务、引用等）总能把初学者弄得云里雾里，**而Modbus比OPC UA简单太多了**，简单之处体现包括：
 
 - Modbus最开始使用RS232，RS485等串行链路作为底层通信方式，串行总线的接口芯片成本低，而且布线也简单方便；
 - Modbus是简单的应用层协议，其信息格式简单易懂，下文会详细讲述协议内容；

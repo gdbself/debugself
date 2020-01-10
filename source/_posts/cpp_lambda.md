@@ -41,7 +41,7 @@ void fun(){
 ```
     上述代码中，变量y属于add外定义的变量，但是add依旧可以直接使用变量y，而普通函数做不到这个功能，普通函数要想使用变量y，则需要通过参数传递把y传递过去，多麻烦啊？下文会更详细的说明捕获变量的用法。
 
-* Lambda通常会结合function使用([请阅读《c++11 function、bind用法详解》](http://www.debugself.com/archives/86 "c++11 function、bind用法详解"))，再加上自动捕获变量，可以完成很多功能，威力无穷。
+* Lambda通常会结合function使用([请阅读《c++11 function、bind用法详解》](/2017/09/20/cpp_bind_fun/ "c++11 function、bind用法详解"))，再加上自动捕获变量，可以完成很多功能，威力无穷。
     
 
 ## Lambda表达式的语法详解
@@ -102,7 +102,7 @@ f();
 
 **标号6：**函数内容；注意函数最后面，需要添加一个;分号
 
-Lambda表达式的使用示例，请参考[《c++11 function、bind用法详解》](http://www.debugself.com/archives/86 "c++11 function、bind用法详解")
+Lambda表达式的使用示例，请参考[《c++11 function、bind用法详解》](/2017/09/20/cpp_bind_fun/ "c++11 function、bind用法详解")
 
 ## Lambda表达式的实质
 

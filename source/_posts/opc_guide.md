@@ -25,10 +25,14 @@ date: 2019-11-27 13:00:54
 
 ![](/images/wp/wx.jpg)
 
-[物联网IoT协议之mqtt快速入门教程](https://www.debugself.com/archives/245)
+[物联网IoT协议之mqtt快速入门教程](/2019/10/23/mqtt_guide/)
+[物联网IoT协议之OPC UA快速入门教程](/2019/11/27/opc_guide/)
+[物联网IoT协议之 LoRaWAN快速入门教程](/2019/12/08/lorawan_guide/)
+[物联网IoT协议之NB-IoT/CoAP快速入门教程](/2019/12/18/nb_iot_guide/)
+[物联网IoT上云协议之Modbus快速入门教程](/2020/01/01/modbus_guide/)
 
 ## 什么是OPC UA
-OPC UA是一套通信协议标准，完成设备与设备，设备与应用之间的数据交互。源码先生的[物联网IoT协议之mqtt快速入门教程](https://www.debugself.com/archives/245)中的mqtt也是一套数据交互的协议标准，两者虽然协议内容不同，但最终目的一致，都是为了实现不同系统的数据交互。
+OPC UA是一套通信协议标准，完成设备与设备，设备与应用之间的数据交互。源码先生的[物联网IoT协议之mqtt快速入门教程](/2019/10/23/mqtt_guide/)中的mqtt也是一套数据交互的协议标准，两者虽然协议内容不同，但最终目的一致，都是为了实现不同系统的数据交互。
 
 OPC UA前身是OPC，第一个OPC规范在1996年发布，包括一整套接口、属性和方法的标准集；OPC基于Windows操作系统的COM技术，所以只能运行在Windows上。
 
