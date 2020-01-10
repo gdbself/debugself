@@ -146,21 +146,21 @@ to_string其实功能还比较弱，连转换格式控制都不提供，不过�
 
 ## 更方便更安全的智能指针shared_ptr
 
-见[《C++11智能指针shared\_ptr、weak\_ptr、unique_ptr用法详解》](http://www.debugself.com/archives/89 "C++11智能指针shared_ptr、weak_ptr、unique_ptr用法详解")
+见[《C++11智能指针shared\_ptr、weak\_ptr、unique_ptr用法详解》](/2017/09/24/cpp_shared_ptr/ "C++11智能指针shared_ptr、weak_ptr、unique_ptr用法详解")
 
 ## 更方便的函数:lambda表达式
 
 使用lambda可以就地创建一个函数，写法更简洁，提高了编码效率
 
-见[《C++11 Lambda表达式(匿名函数)用法详解》](http://www.debugself.com/archives/94 "C++11 Lambda")
+见[《C++11 Lambda表达式(匿名函数)用法详解》](/2017/10/01/cpp_lambda/ "C++11 Lambda")
 
 ## 功能更强的回调函数:function和bind
 
-见[《c++11 function、bind用法详解》](http://www.debugself.com/archives/86 "c++11 function、bind用法详解")
+见[《c++11 function、bind用法详解》](/2017/09/20/cpp_bind_fun/ "c++11 function、bind用法详解")
 
 ## 效率更高的右值引用
 
-见[《C++11 右值引用、 move、emplace、emplace_back原理和用法详解》](http://www.debugself.com/archives/54 "C++11 右值引用、 move、emplace、emplace_back原理和用法详解")
+见[《C++11 右值引用、 move、emplace、emplace_back原理和用法详解》](/2017/09/13/cpp_rvalue/ "C++11 右值引用、 move、emplace、emplace_back原理和用法详解")
 
 ## for_each
 
@@ -193,7 +193,7 @@ unordered\_map/unordered\_multimap、unordered\_set/unordered\_multiset
 
 ## mutable关键字:突破const关键字的限制
 
-见[《C++11mutable关键字用法详解》](http://www.debugself.com/archives/97 "C++11 mutable关键字用法详解")
+见[《C++11mutable关键字用法详解》](/2017/10/01/cpp_mutable/ "C++11 mutable关键字用法详解")
 
 ## 其他
 
