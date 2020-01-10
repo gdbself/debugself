@@ -20,7 +20,7 @@ date: 2020-01-01 20:10:40
 
 关注我，获取更多**物联网IoT+云原生**的技术分享。
 
-![](/images/wp/wx.jpg)
+![](/images/wx.jpg)
 
 [物联网IoT协议之mqtt快速入门教程](/2019/10/23/mqtt_guide/)
 [物联网IoT协议之OPC UA快速入门教程](/2019/11/27/opc_guide/)

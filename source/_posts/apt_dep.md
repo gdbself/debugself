@@ -64,13 +64,14 @@ libwxgtk3.0-dev : Depends: wx-common (= 3.0.0-2) but it is not going 
 Depends: wx3.0-headers (= 3.0.0-2) but it is not going to be installed
 Depends: libwxbase3.0-dev (= 3.0.0-2) but it is not going to be installed
 E: Unmet dependencies. Try 'apt-get -f install' with no packages (or specify a solution).
-```  
+```
 
 你妹这是逗我玩呢，还能循环依赖？这不死锁了嘛。。。
 
 按照提示执行apt-get -f install，依旧同样的错误！
 
 好吧，我不安装Erlang/OTP还不行吗？然而，apt-get命令直接不能用了，比如我执行
+
 ```
 apt-get install htop
 ```

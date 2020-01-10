@@ -14,6 +14,6 @@ weibo:源码先生TCM
 
 wechat:
 
-![155.png](/images/wp/wxgzh.png "源码先生微信公众号")
+![源码先生个人微信号](/images/wp/wxgzh.png "源码先生个人微信号")
 
 加好友时请注明：from debugself
