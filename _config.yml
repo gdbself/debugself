@@ -4,7 +4,7 @@
 
 # Site
 title: 源码先生的调试人生
-subtitle: ''
+subtitle: '源码先生，他调试程序，也调试人生'
 description: '源码先生的个人技术分享网站，分享IoT物联网，C++，Linux，Windows，Web等各种开发技术'
 keywords: 源码先生,技术分享,C++,Node.js,go,Web,Linux,K8S,Docker,云原生,物联网IoT,工业互联网,工业4.0
 author: 源码先生
@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://www.debugself.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
