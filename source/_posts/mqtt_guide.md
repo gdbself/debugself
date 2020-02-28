@@ -28,6 +28,7 @@ date: 2019-10-23 23:53:00
 [物联网IoT协议之 LoRaWAN快速入门教程](/2019/12/08/lorawan_guide/)
 [物联网IoT协议之NB-IoT/CoAP快速入门教程](/2019/12/18/nb_iot_guide/)
 [物联网IoT上云协议之Modbus快速入门教程](/2020/01/01/modbus_guide/)
+[IPv6快速入门教程](/2020/02/28/IPv6_guide/)
 
 # 为什么会写这篇mqtt教程
 
