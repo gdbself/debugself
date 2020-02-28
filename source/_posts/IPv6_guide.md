@@ -209,7 +209,7 @@ listen(sockfd, lisnum);                         // IPv4,IPv6监听端口
 源码先生网上找了个示例，可参考https://www.cnblogs.com/wuyuxuan/p/5541598.html
 
 ### IPv6对DNS的影响
-**DNS用A(Address)记录表示域名对应的IPv4地址**，Ubuntu中使用如下命令查看www.taobao.com对应的IPv4地址：
+**DNS用A(Address)记录表示域名对应的IPv4地址**，Ubuntu中使用如下命令查看淘宝对应的IPv4地址：
 ```
 dig www.taobao.com
 ```
@@ -220,7 +220,7 @@ www.taobao.com.         516     IN      CNAME   www.taobao.com.danuoyi.tbcache.c
 www.taobao.com.danuoyi.tbcache.com. 36 IN A     101.37.183.170
 www.taobao.com.danuoyi.tbcache.com. 36 IN A     101.37.183.171
 ```
-**DNS用AAAA记录表示域名对应的IPv6地址**，Ubuntu中使用如下命令查看www.taobao.com对应的IPv6地址：
+**DNS用AAAA记录表示域名对应的IPv6地址**，Ubuntu中使用如下命令查看淘宝对应的IPv6地址：
 ```
 dig www.taobao.com AAAA
 ```
