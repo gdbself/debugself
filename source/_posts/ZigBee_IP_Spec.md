@@ -14,8 +14,8 @@ tags:
   - 物联网云平台
 categories:
   - 物联网IoT
-keywords: ZigBee IP,IPv6,IPv4,物联网IoT,工业互联网,工业4.0,物联网云平台,上云协议,万物联网
-description: 'ZigBee IP Specification标准规范pdf下载,ZigBee IP性能测试'
+keywords: ZigBee IP,6LoWPAN,IPv6,IPv4,物联网IoT,工业互联网,工业4.0,物联网云平台,上云协议,万物联网
+description: 'ZigBee IP Specification标准规范pdf下载,ZigBee IP性能测试,6LoWPAN'
 date: 2020-03-08 01:00:00
 ---
 
