@@ -27,6 +27,7 @@ date: 2020-02-28 23:53:00
 [物联网IoT协议之NB-IoT/CoAP快速入门教程](/2019/12/18/nb_iot_guide/)
 [物联网IoT上云协议之Modbus快速入门教程](/2020/01/01/modbus_guide/)
 [IPv6快速入门教程](/2020/02/28/IPv6_guide/)
+[物联网IoT协议之6LoWPAN快速入门教程](/2020/03/08/6LoWPAN_guide/)
 
 # IPv6快速入门教程
 
