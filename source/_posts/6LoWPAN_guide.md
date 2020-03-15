@@ -29,6 +29,7 @@ date: 2020-03-08 14:34:00
 [物联网IoT上云协议之Modbus快速入门教程](/2020/01/01/modbus_guide/)
 [IPv6快速入门教程](/2020/02/28/IPv6_guide/)
 [物联网IoT协议之6LoWPAN快速入门教程](/2020/03/08/6LoWPAN_guide/)
+[物联网IoT协议之HTTP快速入门教程](/2020/03/15/HTTP_guide/)
 
 # 物联网IoT协议之6LoWPAN快速入门教程
 

@@ -32,7 +32,7 @@ date: 2020-03-15 14:37:00
 
 # 物联网IoT协议之HTTP快速入门教程
 
-HTTP并不是为物联网设计的，但是HTTP太流行了，在没有智能手机的年代，谁的上网不是从浏览器里输入http://www.xxx.com开始的？即使现在手机APP不需要手动输入网址了，APP后台也少不了HTTP通信。物联网的COAP协议和HTTP非常类似，且更能满足物联网低功耗等特点，但**物联网依旧离不开HTTP，HTTP的市场占有率决定了，谁支持HTTP，谁就能快速接入丰富多彩的互联网世界**.
+HTTP并不是为物联网设计的，但是HTTP太流行了，在没有智能手机的年代，谁的上网不是从浏览器里输入 http://www.xxx.com 开始的？即使现在手机APP不需要手动输入网址了，APP后台也少不了HTTP通信。物联网的COAP协议和HTTP非常类似，且更能满足物联网低功耗等特点，但**物联网依旧离不开HTTP，HTTP的市场占有率决定了，谁支持HTTP，谁就能快速接入丰富多彩的互联网世界**.
 
 ## HTTP
 HTTP(HyperText Transfer Protocol)，即超文本传输协议，从字面上看，涉及两个问题:
@@ -52,7 +52,7 @@ OSI标准7层网络模型中，HTTP是最上层的应用层协议，HTTP下面�
 ![HTTP OSI 7层网络模型](/images/wp/HTTP_osi.png)
 
 ### HTTP基于TCP到底是什么意思
-以查询手机归属地作为示例，浏览器访问http://mobsec-dianhua.baidu.com/dianhua_api/open/location?tel=13843859438可以看到归属地查询结果，这里通过使用命令行分步骤实现归属地的查询，看看HTTP基于TCP的细节。
+以查询手机归属地作为示例，浏览器访问 http://mobsec-dianhua.baidu.com/dianhua_api/open/location?tel=13843859438 可以看到归属地查询结果，这里通过使用命令行分步骤实现归属地的查询，看看HTTP基于TCP的细节。
 
 ![nc命令模拟HTTP请求](/images/wp/HTTP_nc.png)
 
@@ -60,7 +60,7 @@ OSI标准7层网络模型中，HTTP是最上层的应用层协议，HTTP下面�
 ```
 nc -v mobsec-dianhua.baidu.com 80
 ```
-上述命令，会自动获取mobsec-dianhua.baidu.com对应的IP地址180.101.212.32，然后建立到80端口的TCP连接。
+上述命令，会自动获取mobsec-dianhua.baidu.com对应的IP地址180.101.212.32，然后建立到180.101.212.32地址80端口的TCP连接。
 
 2. TCP连接成功后，可以看到如下字符串
 ```
@@ -74,6 +74,7 @@ Host: mobsec-dianhua.baidu.com
 Accept: */*
 
 ```
+上述内容全部是字符串，但是字符串是符合HTTP标准的。
 
 4. 服务器返回数据，TCP收到数据，数据内容为HTTP格式的字符串
 ```
@@ -97,7 +98,7 @@ Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
 
 ![HTTP 请求/应答模式](/images/wp/HTTP_req_res.jpg)
 
-客户端发送HTTP请求，服务器返回HTTP应答。在HTTP早期版本，一个TCP连接，只能完成一次请求+应答，完成后TCP连接被断开；如果有新的请求，必须再建立新的连接，这称为**短连接**。随着HTTP版本的迭代更新，开始支持**长连接**，一次请求+应答完成后，TCP连接可以不断开，继续用来发送新的请求+应答。
+客户端发送HTTP请求，服务器返回HTTP应答。在HTTP早期版本，一个TCP连接，只能完成一次请求+应答，完成后TCP连接被断开；如果有新的请求，必须再建立新的连接，这称为**短连接**。随着HTTP版本的迭代更新，开始支持**长连接**，一次请求+应答完成后，TCP连接可以不断开，继续用来发送下一个的请求+应答。
 
 ## HTTP报文格式
 HTTP报文内容是ASCII字符串，分为三大部分：
@@ -106,16 +107,16 @@ HTTP报文内容是ASCII字符串，分为三大部分：
 
 请求行和首部是各种配置参数，而**主体是资源本身，如图片，文字等**；
 
-![HTTP 请求/应答模式](/images/wp/HTTP_packet2.png)
+![HTTP 报文说明](/images/wp/HTTP_packet2.png)
 
-报文又可以划分为请求报文和应答报文，两者的格式基本是一致的，但是细节有区别。报文示例如下
+报文又可以分为请求报文和应答报文，两者的格式基本是一致的，但是细节有区别。报文示例如下
 
 ![HTTP 报文示例](/images/wp/HTTP_packet_demo.png)
 
 下面重点讲述下HTTP报文中常用内容。
 
 ### HTTP请求报文--请求行
-请求报文中的起始行主要包括方法Method、版本号、URL。
+请求报文中的起始行主要**包括方法Method、版本号、URL三部分**。
 
 #### 请求报文--请求行--方法Method
 方法用来区分对资源文件的各种操作，常用的方法包括：增删改查。
@@ -141,14 +142,14 @@ protocol :// hostname[:port] / path /subpath/ [;parameters][?query]#fragment
 其中，方括号[]为可选项，
 
 - protocol：定义服务的协议类型，最常见的类型是http、https
-- hostname： 域名/主机名，如baidu.com，域名是分级的，又可以分为www.baidu.com、mp3.baidu.com等，因为www很常见，造成大家误认为www是必须的，其实不然，**就是改成www250.baidu.com也是可以的**，只要DNS能正确解析域名，返回最终的IP地址，www250.baidu.com也是可以正常访问的。
+- hostname： 域名/主机名，如 baidu.com ，域名是分级的，又可以分为 www.baidu.com 、 mp3.baidu.com 等，因为www很常见，造成大家误认为www是必须的，其实不然，**就是改成 www250.baidu.com 也是可以的**，只要DNS能正确解析域名，返回最终的IP地址， www250.baidu.com 也是可以正常访问的。
 - port：http默认端口号是 80，https默认是443端口，默认端口是可以省略的
 - path/subpath：服务器上资源路径，如果省略，则为根目录
 - parameters:参数,参数是key=value的形式，**参数前需要用分号";"**
 - query：查询字符串，用于查询时附加更详细的参数，**query前需要用问号“?”**，query是键值对，每个键值都是key=value的形式，**多个键值对之间以 & 符号分隔**，如?postid=5038412&t=1450591802326，服务器会根据参数串的 & 和 = 对参数进行解析片段
 - #为片段，当网页比较大时，浏览器使用片段直接定位到具体片段的位置。
 
-query是键值对，可以自定义添加各种key=value，所以**URL中是可以承载很多信息的，但是浏览器对URL有长度限制**，所以URL也不能无限长。
+query是键值对，可以自定义添加各种key=value，所以**URL中是可以承载很多信息的，但是浏览器对URL有长度限制**，URL也不能无限长。
 
 ### HTTP请求报文--请求头部/首部
 HTTP 规范的首部分为几大类：
@@ -157,7 +158,7 @@ HTTP 规范的首部分为几大类：
 - 响应首部
 - 实体首部
 - 扩展首部
-这些首部有什么区别呢，详细说起来比较复杂，源码先生建议可以现不关心这些首部的区别，**所有首部都是Key:Value格式，HTTP预定义了很多Key，应用程序也可以自定义Key：value**，大家熟悉常用的、预定义的Key的含义和用法即可，下面是常用Key说明。
+这些首部有什么区别呢，详细说起来比较复杂，源码先生建议可以先不关心这些首部的区别，**他们的共同点是：所有首部都是Key:Value格式，HTTP标准预定义了很多Key，应用程序也可以自定义Key：value**，大家熟悉常用的、预定义的Key的含义和用法即可，下面是常用Key说明。
 
 #### Accept
 客户端发送的请求报文中，使用Accept告诉服务器，客户端能够接受的资源类型，服务器会尽量按照Accept的要求返回资源。Accept的示例：
@@ -165,7 +166,7 @@ HTTP 规范的首部分为几大类：
 ```
 Accept: image/jpeg,application/json,*/*
 ```
-image/jpeg表示客户端可以接受jpeg的图片，*/*表示客户端可以接受任何类型的资源。
+image/jpeg表示客户端可以接受jpeg的图片，"*/*"表示客户端可以接受任何类型的资源。
 
 #### Content-Type
 主体的资源类型，这里的资源类型和Accept的资源类型含义相同，常见的资源类型有
@@ -235,7 +236,17 @@ http://fanyi.youdao.com/translate?&doctype=json&type=AUTO&i=calculate
 浏览器的返回结果为：
 
 ```
-{"type":"EN2ZH_CN","errorCode":0,"elapsedTime":1,"translateResult":[[{"src":"calculate","tgt":"计算"}]]}
+{
+	"type": "EN2ZH_CN",
+	"errorCode": 0,
+	"elapsedTime": 1,
+	"translateResult": [
+		[{
+			"src": "calculate",
+			"tgt": "计算"
+		}]
+	]
+}
 ```
 当要翻译一篇文章时，上述示例就不能用了，因为上述示例中要翻译的内容是放在URL中，而浏览器对URL的长度是有限制的，**文章太长时是无法放到URL中的，此时一般会把文章内容放到HTTP主体中而不是URL中**，当然前提是API支持文章内容放到主体中。
 
@@ -267,7 +278,7 @@ body:
   }
 }
 ```
-应答主体也是json字符串，其他细节请访问https://help.aliyun.com/document_detail/58034.html?spm=5176.11065259.1996646101.searchclickresult.2f3e18ef7Yyu4v
+应答主体也是json字符串，其他细节请访问 https://help.aliyun.com/document_detail/58034.html?spm=5176.11065259.1996646101.searchclickresult.2f3e18ef7Yyu4v
 
 ## URL中的中文
 把下面的URL复制到浏览器中
@@ -280,10 +291,10 @@ http://fanyi.youdao.com/translate?&doctype=json&type=AUTO&i=计算
 ```
 http://fanyi.youdao.com/translate?&doctype=json&type=AUTO&i=%E8%AE%A1%E7%AE%97
 ```
-中文字符串“计算”变成了“E8%AE%A1%E7%AE%97”，这是因为URL中只支持ASCII码，不支持中文，中文需要先使用utf-8编码，并使用%间隔起来。
+中文字符串“计算”变成了“E8%AE%A1%E7%AE%97”，这是因为URL中只支持ASCII码，不支持中文，中文需要先使用utf-8编码，并使用%间隔起来,JavaScript中urlencode函数用来编码URL字符串。
 
 ## HTTP中的二进制
-前面提到过，HTTP是ASCII码字符串，不支持二进制，物联网为了节省数据流量，更倾向用二进制数据，**二进制数据要通过HTTP传输，必须先转换为字符串，常用的base64编码就是把二进制转换为字符串。
+前面提到过，HTTP是ASCII码字符串，不支持二进制，物联网为了节省数据流量，更倾向用二进制数据，**二进制数据要通过HTTP传输，必须先转换为字符串，常用的base64编码就是把二进制转换为字符串**。
 
 ## HTTP/2
 HTTP /1.1于1999年发布，HTTP1.1不支持多路复用，即发送一个HTTP请求后，必须等到HTTP应答后才能发送下一个请求，而且HTTP是字符串协议，字符串相比二进制更占用流量带宽。随着Web需求迅猛发展，HTTP1.1急需更新，但是由于HTTP的普及，尾大不掉，要升级HTTP，浏览器，Web服务器，相关程序都需要升级，这可是个大工程！这时Google搞了个SPDY(HTTP/2的前身)，**解决了HTTP多路复用等问题**，并依靠Chrome浏览器大肆推广，鉴于Chrome的市场占用率，SPDY顺利变成了HTTP/2,HTTP/2同时还引入了二进制帧，比字符串更节省流量，HTTP传输效率进一步提升。
