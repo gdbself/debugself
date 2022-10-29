@@ -1,8 +1,10 @@
 ---
 title: 开发了一个辅助摸鱼的Chrome小插件 
 tags:
-* Chrome extension
-* 摸鱼
+  - Chrome extension
+  - 摸鱼
+categories:
+  - Web
 keywords: Chrome插件,Chrome extension,摸鱼
 description: 'Chrome插件开发教程,上班摸鱼'
 date: 2022-10-29 11:00:00
